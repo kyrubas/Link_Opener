@@ -65,7 +65,7 @@ class Open_pages:
                     break
                 
 def run_program():
-    if login_page.get() !="" and username_field.get() != "" and password_field.get():
+    if login_page.get() !="" and username_field.get() != "" and password_field.get() != "":
         Log_in(login_page.get(),username_field.get(),password_field.get())
     thepage = Scrape_data(webpage_entry.get())
     thepage.get_response()
